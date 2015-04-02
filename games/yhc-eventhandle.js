@@ -29,6 +29,6 @@ function apiGetScoreboardInfo(onDone){
 }
 
 function apiSaveAwardInfo(name, mobile, onDone){
-	var url = 'http://wx4399.duapp.com/saveAwardInfo?uid=' + getUid() + '&name=' + name + '&mobile=' + mobile;
+	var url = 'http://wx4399.duapp.com/saveAwardInfo?uid=' + getUid() + '&name=' + escape(name) + '&mobile=' + mobile;
     httpGetURL(url, onDone);
 }
