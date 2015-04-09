@@ -6,7 +6,7 @@ var AWARDS = [
 ];
 
 var HONORS = [
-    {'value':0,   'name': '获得“捕虫有一手”称号'},
+    {'value':0,   'name': '获得“捕虫新手”称号'},
     {'value':20,  'name': '获得“捕虫新星”称号'},
     {'value':40,  'name': '获得“捕虫精英”称号'},
     {'value':60,  'name': '获得“捕虫达人”称号'},
