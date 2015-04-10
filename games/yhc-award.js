@@ -1,8 +1,8 @@
 // -- gs(game result) AND share --
 var AWARDS = [
-    {'value':6,  'name': '萤火虫之夜门票1张'},
-    {'value':8,  'name': '萤火虫之夜门票2张'},
-    {'value':9, 'name': '萤火虫之夜门票3张'}
+    {'value':6,  'name': '《萤火虫嘉年华入场券》1张'},
+    {'value':7,  'name': '《萤火虫嘉年华入场券》2张'},
+    {'value':8,  'name': '《萤火虫嘉年华入场券》3张'}
 ];
 
 var HONORS = [
