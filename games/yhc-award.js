@@ -68,6 +68,7 @@ function shareGetDesc(score){
 
 
 // -- test code --
+/*
 console.log('-- 评语 --');
 console.log('还没有玩过：' + grGetCommentText());
 console.log('score=0：' + grGetCommentText(0));
@@ -76,3 +77,4 @@ console.log('score=21：' + grGetCommentText(21));
 console.log('score=59：' + grGetCommentText(59));
 console.log('score=61：' + grGetCommentText(61));
 console.log('score=101：' + grGetCommentText(101));
+*/

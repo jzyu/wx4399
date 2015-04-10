@@ -9,9 +9,18 @@ function getUrlParam(param) {
 	else
 		return null;
 }
+
+function getUrlParamFromHtml(param) {
+	var el = document.getElementById(param);
+	if (el)
+		return el.value;
+	else
+		return null;
+}
     
 function getUid(){
-    var uid = getUrlParam('uid');
+    //var uid = getUrlParam('uid');
+    var uid = getUrlParamFromHtml('uid');
     if (! uid)
         uid = '999999';
     return uid;
