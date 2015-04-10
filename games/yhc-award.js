@@ -1,8 +1,8 @@
 // -- gs(game result) AND share --
 var AWARDS = [
     {'value':60,  'name': '萤火虫之夜门票1张'},
-    {'value':80,  'name': '萤火虫之夜门票2张'},
-    {'value':100, 'name': '萤火虫之夜门票3张'}
+    {'value':70,  'name': '萤火虫之夜门票2张'},
+    {'value':80, 'name': '萤火虫之夜门票3张'}
 ];
 
 var HONORS = [
@@ -66,7 +66,7 @@ function shareGetDesc(score){
     return grGetCommentText(score);
 }
 
-/*
+
 // -- test code --
 console.log('-- 评语 --');
 console.log('还没有玩过：' + grGetCommentText());
@@ -76,4 +76,3 @@ console.log('score=21：' + grGetCommentText(21));
 console.log('score=59：' + grGetCommentText(59));
 console.log('score=61：' + grGetCommentText(61));
 console.log('score=101：' + grGetCommentText(101));
-*/
