@@ -316,7 +316,7 @@ function playWinController(win){
         var cb_blink = function(){
             star.is_blink = true;
             star.blink_timer = null;
-            
+                                    
             star.play('blink', 1, function(){
                 star.is_blink = false;
                 star.play('stop', 1, function(){
@@ -330,14 +330,14 @@ function playWinController(win){
     
     var showMoon = function(m){
         var cb_show = function(){
-            console.log('moon show');
-            m.show_timer = null;            
+            console.log('moon show');            
             m.setVisible(true);
 
-            setTimeout(function(){
+            m.show_timer = setTimeout(function(){
                 console.log('moon hide');
                 m.setVisible(false);
                 updateMoonPosition(m);
+
                 m.show_timer = setTimeout(cb_show, 3000);
             }, 3000);
         };
