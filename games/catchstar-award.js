@@ -31,9 +31,14 @@ function grIsReachAward(score){
     else return false;
 }
 
+// 根据分数得到评语
+function grGetResultText(score){ //游戏结束提示框文本
+    var text = '耶！你已奋斗了' + score + '个带星星的夜晚。' + score + '星劳动标兵非你莫属! 还等什么，赶紧报告老板，加薪，就是现在！';
+    return text;
+}
 
 // 根据分数得到评语
-function grGetCommentText(score){
+function grGetCommentText(score){ //分享朋友圈文本
     var i;
     var comment = '';
     
@@ -76,3 +81,4 @@ console.log('score=93：' + grGetCommentText(93));
 console.log('score=101：' + grGetCommentText(101));
 console.log('score=120：' + grGetCommentText(120));
 */
+//console.log('result text=' + grGetResultText(120));
