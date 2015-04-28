@@ -4,10 +4,10 @@ var AWARDS = [
 ];
 
 var HONORS = [
-    {'value':0,   'name': '报告老板，我是三星劳动标兵。我不偷懒、不矫情，请鉴定！'},
-    {'value':50,  'name': '报告老板，我是四星劳动标兵。我蛮拼的。我废寝忘食，却甘之如饴。老板，你造吗？'},
-    {'value':80,  'name': '报告老板，我是五星劳动标兵！劳动让我脑洞大开，春风迎面。加点工资，不难吧？'},
-    {'value':100, 'name': '报告老板，我是“超模”耶！我的小伙伴都惊呆了！老板，快点加薪!'}    
+    {'value':0,   'name': '报告老板，我是三星劳动标兵。几张迟到券妥妥的？'},
+    {'value':50,  'name': '报告老板，我是四星劳动标兵。说好的奖金，该落实了'},
+    {'value':80,  'name': '报告老板，我是五星劳动标兵！加点工资，不难吧！'},
+    {'value':100, 'name': '报告老板，我是“超模”耶！出国旅游到手了！'}
 ];
 
 //var COMMENT_PREFIX_NOAWARD  = '逆袭成功！捕获萤火虫';
@@ -33,8 +33,9 @@ function grIsReachAward(score){
 
 // 根据分数得到评语
 function grGetResultText(score){ //游戏结束提示框文本
-    var text = '耶！你已奋斗了' + score + '个带星星的夜晚。' + score + '星劳动标兵非你莫属! 还等什么，赶紧报告老板，加薪，就是现在！';
-    return text;
+    //var text = '耶！你已奋斗了' + score + '个带星星的夜晚。' + score + '星劳动标兵非你莫属! 还等什么，赶紧报告老板，加薪，就是现在！';
+    //return text;
+    return grGetCommentText(score);
 }
 
 // 根据分数得到评语
@@ -80,5 +81,5 @@ console.log('score=72：' + grGetCommentText(72));
 console.log('score=93：' + grGetCommentText(93));
 console.log('score=101：' + grGetCommentText(101));
 console.log('score=120：' + grGetCommentText(120));
+console.log('result text=' + grGetResultText(120));
 */
-//console.log('result text=' + grGetResultText(120));
