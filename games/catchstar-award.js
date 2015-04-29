@@ -33,9 +33,17 @@ function grIsReachAward(score){
 
 // 根据分数得到评语
 function grGetResultText(score){ //游戏结束提示框文本
-    //var text = '耶！你已奋斗了' + score + '个带星星的夜晚。' + score + '星劳动标兵非你莫属! 还等什么，赶紧报告老板，加薪，就是现在！';
-    //return text;
-    return grGetCommentText(score);
+	if (! score) 
+		score = 0;	
+	var RESULT_TEXT = [
+	    {'value':0,   'name': '是三星劳动标兵，超勤奋，不偷懒。老板您看，几张迟到券妥妥的吧？'},
+	    {'value':50,  'name': '是四星劳动标兵，我废寝忘食却甘之如饴。老板，说好的奖金，该落实了吧！'},
+	    {'value':80,  'name': '是五星劳动标兵，劳动让我脑洞大开，春风迎面。老板，加点工资，不难吧！'},
+	    {'value':100, 'name': '是“超模”耶！小伙伴都惊呆了！ 老板，我日思夜想的出国旅游机会到手了！'}
+	];	
+    var text = '耶！你已奋斗了' + score + '个带星星的夜晚。' + getReachNameInArray(score, RESULT_TEXT);
+    return text;
+    //return grGetCommentText(score);
 }
 
 // 根据分数得到评语
@@ -81,5 +89,12 @@ console.log('score=72：' + grGetCommentText(72));
 console.log('score=93：' + grGetCommentText(93));
 console.log('score=101：' + grGetCommentText(101));
 console.log('score=120：' + grGetCommentText(120));
-console.log('result text=' + grGetResultText(120));
 */
+console.log('还没有玩过：' + grGetResultText());
+console.log('score=0：' + grGetResultText(0));
+console.log('score=49：' + grGetResultText(49));
+console.log('score=50：' + grGetResultText(50));
+console.log('score=72：' + grGetResultText(72));
+console.log('score=93：' + grGetResultText(93));
+console.log('score=101：' + grGetResultText(101));
+console.log('score=120：' + grGetResultText(120));
